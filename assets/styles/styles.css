@@ -1,0 +1,68 @@
+/* Pseudo-clases */
+/* Variables */
+:root {
+  --main-color: #e7eaf6;
+  --primary-color: #a2a8d3;
+  --secondary-color: #38598b;
+  --terciary-color: #113f67;
+  --bg-color: ;
+  --bg-color-2: ;
+  --font-size-text: ;
+  --font-color: ;
+  --font-weight: ;
+}
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Removes list styles (bullets/numbers) */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navbar */
+header {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+header .contenedor {
+  padding: 1.2rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .contenedor .logo {
+  font-size: 1.5rem;
+}
+
+nav ul{
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.navbar-links {
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  background-color: red;
+}

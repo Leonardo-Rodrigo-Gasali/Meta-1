@@ -5,11 +5,13 @@
   --primary-color: #a2a8d3;
   --secondary-color: #38598b;
   --terciary-color: #113f67;
-  --bg-color: ;
-  --bg-color-2: ;
+  --bg-color: #393e46;
+  --bg-color-2: #222831;
+  --btn-color: #233142;
+  --btn-bg-color: #fcfefe;
   --font-size-text: ;
-  --font-color: ;
-  --font-weight: ;
+  --font-color: #233142;
+  --font-weight: 700;
 }
 
 /* Universal Selector */
@@ -52,11 +54,13 @@ header .navbar-contenedor {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 1.2rem 10rem;
+  padding: 1.2rem 5rem;
 }
 
 header .navbar-contenedor .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: var(--font-color);
+  font-weight: var(--font-weight);
 }
 
 header .navbar-contenedor nav ul{
@@ -68,10 +72,12 @@ header .navbar-contenedor nav ul{
 .navbar-links {
   font-size: 1.2rem;
   padding: 0.5rem 1.5rem;
+  color: var(--font-color);
 }
 
 .activo {
   background-color: red;
+  color: var(--main-color);
   border-radius: 0.4rem;
   transition: 0.5s;
 }
@@ -123,6 +129,7 @@ header .navbar-contenedor .overlay.activo {
     left: 2rem;
     position: absolute;
     top: 2rem;
+    color: black;
   }
 }
 
@@ -133,44 +140,49 @@ header .navbar-contenedor .overlay.activo {
   background-image: url(https://images.unsplash.com/photo-1554595666-19ceabf46a84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 400px 0 100px;
+  padding: 10rem 0;
+  display: flex;
 }
 
 .banner-contenedor {
-  margin: auto;
-  max-width: 1200px;
-  padding: 0 20px;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0 2.5rem;
 }
 
 .titulo-primario{
+  margin-bottom: 0.5rem;
   color: #ff8001;
   font-family:'Quicksand',sans-serif;
-  font-size: 14px;
+  font-size: 2.5rem;
   letter-spacing: 2px;
 }
 
 .titulo-secundario{
+  margin-bottom: 0.5rem;
   color: white;
   font-family: 'Quicksand',sans-serif;
-  font-size: 40px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .introduccion{
+  margin: 1.5rem 0;
  color: #ffffffb3;
  font-family: 'Quicksand',sans-serif;
- font-size: 17px;
+ font-size: 1rem;
  line-height: 1.5;
 }
 
 .btn{
-  background-color: white;
+  background-color: red;
+  color: var(--main-color);
   border-radius: 5px;
   border: 0;
-  font-family: 'Quicksand',sans-serif;
-  font-size: 100%;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 600;
   letter-spacing: 0.5px;
-  margin-top: 5px;
   padding: 12px 17px;
+  transition: 0.5s;
+  cursor: pointer;
 }
